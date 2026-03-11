@@ -13,7 +13,7 @@ export const SocketProvider = ({ children }) => {
 
   const [call, setCall] = useState({});
   const [callAccepted, setCallAccepted] = useState(false);
-  const [callEnded, setCallEnded] = useState(false);
+  const [, setCallEnded] = useState(false);
 
   const myVideo = useRef();
   const userVideo = useRef();
