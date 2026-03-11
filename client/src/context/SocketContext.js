@@ -4,7 +4,7 @@ import Peer from "simple-peer";
 
 export const SocketContext = createContext();
 
-const socket = io("http://localhost:5000");
+const socket = io("https://peerlink-server.onrender.com");
 
 export const SocketProvider = ({ children }) => {
 
