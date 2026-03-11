@@ -1,9 +1,26 @@
 import React from "react";
+import "./App.css";
+
+import VideoPlayer from "./components/VideoPlayer";
+import Options from "./components/Options";
+import Notifications from "./components/Notifications";
 
 function App() {
   return (
-    <div>
-      <h1>PeerLink Video Chat</h1>
+    <div className="app">
+
+     <div className="title-box">
+      Peerlink Video Chat
+     </div> 
+
+      <VideoPlayer />
+
+      <div className="controls">
+        <Options>
+          <Notifications />
+        </Options>
+      </div>
+
     </div>
   );
 }
